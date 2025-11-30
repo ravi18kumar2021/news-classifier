@@ -1,8 +1,8 @@
-# 📰 📰 NewsClassifier
+# 📰 The News Classifier
 
 A web-based application that classifies news articles into categories like **Business**, **Politics**, **Sports**, **Technology** and **Entertainment** using various NLP techniques and machine learning models.
 
-🚀 Live Demo: [View App](https://news-classifier.vercel.app)
+🚀 Live Demo: [View App](https://the-news-classifier.vercel.app/)
 
 ---
 
@@ -10,7 +10,7 @@ A web-based application that classifies news articles into categories like **Bus
 
 - 🔍 Preprocessing customization (lowercase, stopwords removal, stemming, etc.)
 - 🧠 Choose from 4 vectorization methods: One-Hot, BoW, TF-IDF, N-Gram
-- ⚙️ Backend predictions using trained ML models (Logistic Regression)
+- ⚙️ Backend predictions using trained ML model (Logistic Regression)
 - 📊 Confidence scores & ordered probability outputs
 - 💡 Smart warnings for preprocessing compatibility
 - 🧪 Lightweight UI built with React + TailwindCSS
@@ -38,7 +38,7 @@ A web-based application that classifies news articles into categories like **Bus
 | One-Hot    | Binary presence of tokens |
 | BoW        | Token frequency counts |
 | TF-IDF     | Frequency scaled by importance |
-| N-Gram     | Captures word sequences (e.g., bigrams) |
+| N-Gram     | Captures word sequences (e.g. bigrams) |
 
 ---
 
@@ -70,3 +70,4 @@ python app.py
 cd frontend
 npm install
 npm run dev
+```
