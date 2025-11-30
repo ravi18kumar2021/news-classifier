@@ -14,9 +14,6 @@ export default function TextInputSection({ rawText, setRawText, setOptions, defa
     const [status, setStatus] = useState(initialStatus);
     const wordsCount = (text) => text.trim().split(/\s+/).filter(Boolean).length;
     const textLength = rawText.length;
-    console.log(textLength);
-    setOptions(defaultOptions);
-    setSelectedVector('bow');
     useEffect(() => {
         setStatus(prev => ({
             ...prev,
@@ -25,7 +22,9 @@ export default function TextInputSection({ rawText, setRawText, setOptions, defa
             error: false,
             emptyInput: false
         }));
-    }, [textLength, isSubmitted]);
+        setOptions(defaultOptions);
+        setSelectedVector('bow');
+    }, [textLength, isSubmitted, setOptions, setSelectedVector, defaultOptions]);
     const handleTextInput = (e) => {
         const textValue = e.target.value;
         if (textValue.length <= MAX_CHAR_LIMIT) {
